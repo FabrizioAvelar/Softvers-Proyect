@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+section{
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+#action{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 12px;
+}
+
+label{
+	font-size: 25px;
+	color: #86895c;
+}
+
+form > ul {
+	
+	text-align: center;
+	padding: 25px;
+	list-style: none;
+}
+
+form > ul > li {
+	padding: 10px;
+	background-color: rgba(40,40,40,1.00)
+}
+
+input{
+	text-decoration: none;
+	padding: 10px;
+	font-weight: 600;
+    font-size: 20px;
+    color: #70b62c;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 2px solid #70b62c;
+}
+

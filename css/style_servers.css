@@ -1,0 +1,93 @@
+/* CSS Document */
+section {
+	width: 20%;
+	display: flex;
+	justify-content:flex-start;
+	margin-top: 50px;
+	max-width: 20%;
+	float: left;
+}
+
+#list {
+	list-style: none;
+}
+
+#listserv{
+	margin-top: 10px;
+	margin-left: 0px;
+	color: #86895c;
+	background: rgba(45,45,45,1.00);
+	font-size: 100%;
+	cursor: pointer;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 6px;
+	width: 100%;
+    border: 2px solid #70b62c;
+	max-width: 110%;
+}
+
+#listserv:hover{
+	color: #FFF;
+	background: #86895c;
+	font-size: 180%;
+	transition: all 1s;
+	max-width: 350px;
+	
+}
+
+#listserv:focus{
+	color: #FFF;
+	background: #70b62c;
+	font-size: 180%;
+	transition: all 2s;
+	max-width: 350px;
+}
+
+aside{
+	margin-top: 50px;
+	display: flex;
+	border: solid 2px #70b62c;
+	border-radius: 6px;
+	width: 60%;
+	height: 600px;
+	background-color: rgba(40,40,40,1.00);
+	min-width: 900px;
+}
+
+#select-propieties{
+	width: 25%;
+}
+
+#listpropieties{
+	margin-left: 0px;
+	color: #86895c;
+	background: rgba(45,45,45,1.00);
+	font-size: 100%;
+	cursor: pointer;
+	padding: 10px 10px;
+	text-decoration: none;
+	border-radius: 1px;
+	width: 100%;
+	height: 14.2857143%;
+    border: 2px solid #70b62c;
+	max-width: 110%;
+}
+
+#listpropieties:hover{
+	color: white;
+	background-color: #86895c;
+	font-size: 120%;
+	transition: all 1s;
+}
+
+#listpropieties:focus{
+	color: white;
+	background-color: #70b62c;
+	font-size: 120%;
+	transition: all 1s;
+}
+
+#setpropieties{
+	width: 100%;
+}
