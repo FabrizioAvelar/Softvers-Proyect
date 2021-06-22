@@ -53,7 +53,7 @@
 				<ul id="ulnav">
 					<input type="button" id="listmenus" value="PERFIL">
 					<input type="button" id="listmenus" value="CONFIGURACION">
-					<input type="button" id="listmenus" value="SALIR">
+					<input type="button" id="listmenus" value="SALIR" onClick="location.href='../forms/logoutform.php'">
 				</ul>
 			</li>
 		</ul>

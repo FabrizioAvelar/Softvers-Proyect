@@ -21,25 +21,27 @@
 		<img src="../img/gamevers_logo_web_sf.png" width="330px" id="logoCel">
 		<ul class="ulMenu">
 			<li>
-				<a href="../index.php">INICIO</a>
+				<input type="button" id="listmenu" value="INICIO" onclick="location.href='../index.php'">
 			</li>
 			<li>
-				<a>SERVERS</a>
+				<input type="button" id="listmenu" value="SERVERS">
 			</li>
 			<li>
-				<a>ACERCA DE</a>
-			</li>
-			<div id="logo">
-				<a href="../index.php"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
-			</div>
-			<li>
-				<a href="contact.php">CONTACTO</a>
+				<input type="button" id="listmenu" value="ACERCA DE">
 			</li>
 			<li>
-				<a href="login.php">LOGIN</a>
+				<div id="logo">
+					<a href="../index.php"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
+				</div>
 			</li>
 			<li>
-				<a href="signup.php">SIGNUP</a>
+				<input type="button" id="listmenu" value="CONTACTO" onclick="location.href='contact.php'">
+			</li>
+			<li>
+				<input type="button" id="listmenu" value="LOGIN" onclick="location.href='login.php'">
+			</li>
+			<li>
+				<input type="button" id="listmenu" value="SIGNUP" onclick="location.href='signup.php'">
 			</li>
 		</ul>
 	</nav>
@@ -48,22 +50,22 @@
 			<ul>
 				<li>
 					<label for="name">Nombre</label><br>
-					<input type="text" name="name" id="name" placeholder="Nombre"><br>
+					<input type="text" name="name" id="name" placeholder="Juan Perez"><br>
 				</li>
 				<li>
 					<label for="subjet">Asunto</label><br>
-					<input type="text" name="subjet" id="subjet" placeholder="Asunto"><br>
+					<input type="text" name="subjet" id="subjet" placeholder="Detalles"><br>
 				</li>
 				<li>
 					<label for="email">Correo electronico</label><br>
-					<input type="mail" name="email" id="email" placeholder="Correo electronico"><br>
+					<input type="mail" name="email" id="email" placeholder="juan@ejemplo.com"><br>
 				</li>
 				<li>
 					<label for="message">Mensaje</label><br>
 					<textarea class="message" name="message"></textarea>
 				</li>
 				<li>
-					<input type="submit" name="submit" id="submit" value="Ingresar">
+					<input type="submit" name="submit" id="submit" value="Enviar">
 				</li>
 			</ul>
 		</form>

@@ -22,7 +22,7 @@
 		<img src="img/gamevers_logo_web_sf.png" width="330px" id="logoCel">
 		<ul class="ulMenu">
 			<li>
-				<input type="button" id="listmenu" value="INICIO">
+				<input type="button" id="listmenu" value="INICIO" onclick="location.href='pages/login.php'">
 			</li>
 			<li>
 				<input type="button" id="listmenu" value="SERVERS">
@@ -36,13 +36,13 @@
 				</div>
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="CONTACTO">
+				<input type="button" id="listmenu" value="CONTACTO" onclick="location.href='pages/contact.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="LOGIN">
+				<input type="button" id="listmenu" value="LOGIN" onclick="location.href='pages/login.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="SIGNUP">
+				<input type="button" id="listmenu" value="SIGNUP" onclick="location.href='pages/signup.php'">
 			</li>
 		</ul>
 	</nav>

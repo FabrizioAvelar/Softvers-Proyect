@@ -31,7 +31,7 @@ form > ul > li {
 	background-color: rgba(40,40,40,1.00)
 }
 
-input{
+form > ul > li > input{
 	text-decoration: none;
 	padding: 10px;
 	font-weight: 600;
@@ -40,6 +40,11 @@ input{
     background-color: #FFFFFF;
     border-radius: 6px;
     border: 2px solid #70b62c;
+	
+}
+
+::placeholder{
+	opacity: 0.5;
 }
 
 .message {
@@ -51,4 +56,12 @@ input{
     background-color: #FFFFFF;
     border-radius: 6px;
     border: 2px solid #70b62c;
+}
+
+#submit:hover{
+	cursor: pointer;
+	color: white;
+	background-color: #70b62c;
+	transition-delay: .5s;
+	transition: .5s;
 }

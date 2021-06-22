@@ -24,29 +24,32 @@
 		<img src="../img/gamevers_logo_web_sf.png" width="330px" id="logoCel">
 		<ul class="ulMenu">
 			<li>
-				<a href="../index.php">INICIO</a>
+				<input type="button" id="listmenu" value="INICIO">
 			</li>
 			<li>
-				<a>SERVERS</a>
+				<input type="button" id="listmenu" value="SERVERS">
 			</li>
 			<li>
-				<a>ACERCA DE</a>
-			</li>
-			<div id="logo">
-				<a href="../index.php"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
-			</div>
-			<li>
-				<a href="contact.php">CONTACTO</a>
+				<input type="button" id="listmenu" value="ACERCA DE">
 			</li>
 			<li>
-				<a href="servers.php">MIS SERVIDORES</a>
+				<div id="logo">
+					<a href="../index.php"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
+				</div>
 			</li>
 			<li>
-				<a href="profile.php">
-					<?php
-						echo(strtoupper($_SESSION['username']));
-					?>
-				</a>
+				<input type="button" id="listmenu" value="CONTACTO">
+			</li>
+			<li>
+				<input type="button" id="listmenu" value="MIS SERVIDORES">
+			</li>
+			<li>
+				<input type="button" id="listmenu" value="<?php echo(strtoupper($_SESSION['username'])); ?>" onClick="myFunction()">
+				<ul id="ulnav">
+					<input type="button" id="listmenus" value="PERFIL">
+					<input type="button" id="listmenus" value="CONFIGURACION">
+					<input type="button" id="listmenus" value="SALIR" onClick="location.href='.../forms/logoutform.php'">
+				</ul>
 			</li>
 		</ul>
 	</nav>
