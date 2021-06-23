@@ -48,13 +48,13 @@
 			<li>
 				<input type="button" id="listmenu" value="MIS SERVIDORES">
 			</li>
-			<li>
-				<input type="button" id="listmenu" value="<?php echo(strtoupper($_SESSION['username'])); ?>" onClick="myFunction()">
-				<ul id="ulnav">
+			<li class="myDropdown">
+				<input type="button" class="dropbtn" id="listmenu" value="<?php echo(strtoupper($_SESSION['username'])); ?>" onClick="myFunction()">
+				<div id="ulnav" class="dropdown-content">
 					<input type="button" id="listmenus" value="PERFIL">
 					<input type="button" id="listmenus" value="CONFIGURACION">
 					<input type="button" id="listmenus" value="SALIR" onClick="location.href='../forms/logoutform.php'">
-				</ul>
+				</div>
 			</li>
 		</ul>
 	</nav>
