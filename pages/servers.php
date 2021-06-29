@@ -6,11 +6,6 @@
 	}
 ?>
 
-<?php
-  header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
-  header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
-?>
-
 <!doctype html>
 <html>
 <head>
@@ -29,7 +24,7 @@
 		<img src="../img/gamevers_logo_web_sf.png" width="330px" id="logoCel">
 		<ul class="ulMenu">
 			<li>
-				<input type="button" id="listmenu" value="INICIO">
+				<input type="button" id="listmenu" value="INICIO" onclick="location.href='loggedmain.php'">
 			</li>
 			<li>
 				<input type="button" id="listmenu" value="SERVERS">
@@ -39,19 +34,19 @@
 			</li>
 			<li>
 				<div id="logo">
-					<a href="../index.php"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
+					<a href="lo"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
 				</div>
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="CONTACTO">
+				<input type="button" id="listmenu" value="CONTACTO" onclick="location.href='contact.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="MIS SERVIDORES">
+				<input type="button" id="listmenu" value="MIS SERVIDORES" onclick="location.href='servers.php'">
 			</li>
 			<li class="myDropdown">
 				<input type="button" class="dropbtn" id="listmenu" value="<?php echo(strtoupper($_SESSION['username'])); ?>" onClick="myFunction()">
 				<div id="ulnav" class="dropdown-content">
-					<input type="button" id="listmenus" value="PERFIL">
+					<input type="button" id="listmenus" value="PERFIL" onClick="location.href='profile.php'">
 					<input type="button" id="listmenus" value="CONFIGURACION">
 					<input type="button" id="listmenus" value="SALIR" onClick="location.href='../forms/logoutform.php'">
 				</div>

@@ -1,0 +1,52 @@
+aside{
+	margin-left: 20%;
+	text-align: center;
+	margin-top: 50px;
+	border: solid 2px #70b62c;
+	border-radius: 6px;
+	width: 60%;
+	height: 600px;
+	background-color: rgba(40,40,40,1.00);
+	min-width: 900px;
+	display: inline-flex;
+}
+
+#select-propieties{
+	width: 25%;
+	text-align: center;
+	border: solid 3px #70b62c;
+}
+
+#listpropieties{
+	margin-left: 0px;
+	color: #86895c;
+	background: rgba(45,45,45,1.00);
+	font-size: 100%;
+	cursor: pointer;
+	padding: 10px 10px;
+	text-decoration: none;
+	border-radius: 1px;
+	width: 100%;
+	height: 14.2857143%;
+    border: 2px solid #70b62c;
+	max-width: 110%;
+}
+
+#listpropieties:hover{
+	color: white;
+	background-color: #86895c;
+	font-size: 120%;
+	transition: all 1s;
+}
+
+#listpropieties:focus{
+	color: white;
+	background-color: #70b62c;
+	font-size: 120%;
+	transition: all 1s;
+}
+
+#setpropieties{
+	width: 100%;
+}
+

@@ -22,7 +22,7 @@
 		<img src="../img/gamevers_logo_web_sf.png" width="330px" id="logoCel">
 		<ul class="ulMenu">
 			<li>
-				<input type="button" id="listmenu" value="INICIO">
+				<input type="button" id="listmenu" value="INICIO" onclick="location.href='loggedmain.php'">
 			</li>
 			<li>
 				<input type="button" id="listmenu" value="SERVERS">
@@ -32,22 +32,22 @@
 			</li>
 			<li>
 				<div id="logo">
-					<a href="../index.php"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
+					<a href="loggedmain.php"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
 				</div>
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="CONTACTO">
+				<input type="button" id="listmenu" value="CONTACTO" onclick="location.href='contact.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="MIS SERVIDORES">
+				<input type="button" id="listmenu" value="MIS SERVIDORES" onclick="location.href='servers.php'">
 			</li>
-			<li>
-				<input type="button" id="listmenu" value="<?php echo(strtoupper($_SESSION['username'])); ?>" onClick="myFunction()">
-				<ul id="ulnav">
+			<li class="myDropdown">
+				<input type="button" class="dropbtn" id="listmenu" value="<?php echo(strtoupper($_SESSION['username'])); ?>" onClick="myFunction()">
+				<div id="ulnav" class="dropdown-content">
 					<input type="button" id="listmenus" value="PERFIL">
 					<input type="button" id="listmenus" value="CONFIGURACION">
-					<input type="button" id="listmenus" value="SALIR">
-				</ul>
+					<input type="button" id="listmenus" value="SALIR" onClick="location.href='../forms/logoutform.php'">
+				</div>
 			</li>
 		</ul>
 	</nav>
@@ -77,4 +77,5 @@
 		</form>
 	</section>
 </body>
+<script src="../js/eventsserver.js"></script>	
 </html>
