@@ -33,7 +33,7 @@
 			</li>
 			<li>
 				<div id="logo">
-					<a href="lo"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
+					<a href="../index.php"><img src="../img/gamevers_logo_web_sf.png" width="400px"></a>
 				</div>
 			</li>
 			<li>
@@ -54,13 +54,30 @@
 	</nav>
 	<aside id="asidepropieties">
 		<ul id="select-propieties">
-			<input type="button" id="listpropieties" value="PERFIL">
-			<input type="button" id="listpropieties" value="VERIFICAR E-MAIL">
+			<input type="button" id="listpropieties" value="PERFIL" onClick="profile('<?php echo($_SESSION['username']); ?>')">
+			<?php
+				$username = $_SESSION['username'];
+				include("../forms/conectform.php");
+				$sql = "SELECT veremail FROM users WHERE username='$username'";
+				$verify = $conect->query($sql);
+				$value['Save'] = false;
+    			if(mysqli_num_rows($verify) == 0){
+					header("location: ../index.php");
+				}
+				else{
+					$result = mysqli_fetch_array($verify);
+					if($result['veremail'] == NULL){
+						$value = false;
+					}
+					else{
+						$value = true;
+					}
+				}
+				?>
+			<input type="button" id="listpropieties" value="VERIFICAR E-MAIL" onClick="verEmail('<?php echo($value) ?>')">
+			
 		</ul>
-		<ul class="elements">
-			<?php 
-				
-			?>
+		<ul>
 		</ul>
 	</aside>
 </body>
