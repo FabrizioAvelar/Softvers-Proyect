@@ -24,10 +24,10 @@
 				<input type="button" id="listmenu" value="INICIO" onclick="location.href='../index.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="SERVERS">
+				<input type="button" id="listmenu" value="SERVERS" onclick="location.href='serviceout.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="ACERCA DE">
+				<input type="button" id="listmenu" value="ACERCA DE" onclick="location.href='serviceout.php'">
 			</li>
 			<li>
 				<div id="logo">

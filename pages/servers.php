@@ -27,10 +27,10 @@
 				<input type="button" id="listmenu" value="INICIO" onclick="location.href='loggedmain.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="SERVERS">
+				<input type="button" id="listmenu" value="SERVERS" onclick="location.href='serviceout.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="ACERCA DE">
+				<input type="button" id="listmenu" value="ACERCA DE" onclick="location.href='serviceout.php'">
 			</li>
 			<li>
 				<div id="logo">
@@ -47,7 +47,6 @@
 				<input type="button" class="dropbtn" id="listmenu" value="<?php echo(strtoupper($_SESSION['username'])); ?>" onClick="myFunction()">
 				<div id="ulnav" class="dropdown-content">
 					<input type="button" id="listmenus" value="PERFIL" onClick="location.href='profile.php'">
-					<input type="button" id="listmenus" value="CONFIGURACION">
 					<input type="button" id="listmenus" value="SALIR" onClick="location.href='../forms/logoutform.php'">
 				</div>
 			</li>

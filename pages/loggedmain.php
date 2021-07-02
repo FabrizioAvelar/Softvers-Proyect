@@ -28,10 +28,10 @@
 				<input type="button" id="listmenu" value="INICIO" onclick="location.href='loggedmain.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="SERVERS">
+				<input type="button" id="listmenu" value="SERVERS" onclick="location.href='serviceout.php'">
 			</li>
 			<li>
-				<input type="button" id="listmenu" value="ACERCA DE">
+				<input type="button" id="listmenu" value="ACERCA DE" onclick="location.href='serviceout.php'">
 			</li>
 			<li>
 				<div id="logo">
@@ -47,8 +47,7 @@
 			<li class="myDropdown">
 				<input type="button" class="dropbtn" id="listmenu" value="<?php echo(strtoupper($_SESSION['username'])); ?>" onClick="myFunction()">
 				<div id="ulnav" class="dropdown-content">
-					<input type="button" id="listmenus" value="PERFIL">
-					<input type="button" id="listmenus" value="CONFIGURACION">
+					<input type="button" id="listmenus" value="PERFIL" onClick="location.href='profile.php'">
 					<input type="button" id="listmenus" value="SALIR" onClick="location.href='../forms/logoutform.php'">
 				</div>
 			</li>
@@ -59,19 +58,19 @@
 
 		  <div class="mySlides fade">
 			<div class="numbertext">1 / 3</div>
-			<img src="img/mine1.jpg" style="width:100%">
+			<img src="../img/mine1.jpg" style="width:100%">
 			<div class="text">NUEVOS SERVIDORES MINECRAFT DISPONIBLES</div>
 		  </div>
 
 		  <div class="mySlides fade">
 			<div class="numbertext">2 / 3</div>
-			<img src="img/mine2.jpg" style="width:100%">
+			<img src="../img/mine2.jpg" style="width:100%">
 			<div class="text">AHORA TIENES UN NUEVO MUNDO POR EXPLORAR</div>
 		  </div>
 
 		  <div class="mySlides fade">
 			<div class="numbertext">3 / 3</div>
-			<img src="img/mine3.jpg" style="width:100%">
+			<img src="../img/mine3.jpg" style="width:100%">
 			<div class="text">PROXIMAMENTE NUEVOS MUNDOS</div>
 		  </div>
 
