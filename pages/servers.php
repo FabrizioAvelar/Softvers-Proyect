@@ -53,27 +53,15 @@
 			</li>
 		</ul>
 	</nav>
-	<section>
+	<section id="section">
 		<ul id="list">
 			<?php
 				include("../forms/serversform.php");
 			?>
-			<input type="button" id="listserv" value="+ AGREGAR SERVIDOR">
+			<!--<input type="button" id="listserv" value="+ AGREGAR SERVIDOR" onClick="selectServer(<?php echo(null) ?>)">-->
 		</ul>
 	</section>
 	<aside id="asidepropieties">
-		<ul id="select-propieties">
-			<input type="button" id="listpropieties" value="SERVIDOR" onClick="server()">
-			<input type="button" id="listpropieties" value="CONFIGURACION">
-			<input type="button" id="listpropieties" value="JUGADORES" onClick="players()">
-			<input type="button" id="listpropieties" value="CONSOLA">
-			<input type="button" id="listpropieties" value="VERSION">
-			<input type="button" id="listpropieties" value="ARCHIVOS">
-			<input type="button" id="listpropieties" value="MUNDOS">
-		</ul>
-		<ul>
-			
-		</ul>
 	</aside>
 </body>
 <script src="../js/eventsserver.js"></script>

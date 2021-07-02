@@ -91,3 +91,65 @@ aside{
 #setpropieties{
 	width: 100%;
 }
+
+.lblElements{
+	color: #86895c;
+	font-size: 110%;
+}
+
+.divElements{
+	padding: 6% 0px;
+	width: 100%;
+}
+
+.nbrElements{
+	color: #70b62c;
+	border: solid 2px #70B62C;
+	border-radius: 5px;
+	padding: 3px 0;
+}
+
+
+.sltElements{
+	color: #70b62c;
+	border: solid 2px #70B62C;
+	border-radius: 5px;
+	padding: 3px 0;
+}
+
+.lblCbx{
+	display: flex;
+	width: 50px;
+	height: 20px;
+	border-radius: 13px;
+	background-color:rgba(65,65,65,1.00);
+	box-shadow: inset 0px 0px 6px rgba(0,0,0,0.7);
+	overflow: hidden;
+}
+
+.cbxElements{
+	display: none;
+}
+
+.lblCbx:before{
+	content: '';
+	width: 20px;
+	height: 20px;
+	background-color: #86895c;
+	border-radius: 50%;
+	transform: translate(0,0);
+	transition: all 300ms;
+}
+
+.cbxElements:checked ~ .lblCbx:before{
+	transform: translate(calc(50px - 20px),0);
+}
+
+.cbxElements:checked ~ .lblCbx{
+	background-color: #70b62c;
+}
+
+#expiresMessage{
+	color: #830002;
+	text-align: center;
+}

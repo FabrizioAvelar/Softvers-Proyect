@@ -10,7 +10,8 @@
 <head>
 <meta charset="utf-8">
 <link href="css/style_index.css" rel="stylesheet" type="text/css">
-<link href="css/style_nav.css" rel="stylesheet" type="text/css">	
+<link href="css/style_nav.css" rel="stylesheet" type="text/css">
+<link href="css/slider.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Main</title>
 </head>
@@ -46,5 +47,38 @@
 			</li>
 		</ul>
 	</nav>
+	<section>
+		<div class="slideshow-container">
+
+		  <div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="img/mine1.jpg" style="width:100%">
+			<div class="text">NUEVOS SERVIDORES MINECRAFT DISPONIBLES</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="img/mine2.jpg" style="width:100%">
+			<div class="text">AHORA TIENES UN NUEVO MUNDO POR EXPLORAR</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="img/mine3.jpg" style="width:100%">
+			<div class="text">PROXIMAMENTE NUEVOS MUNDOS</div>
+		  </div>
+
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+	</section>
 </body>
+<script src="js/slider.js"></script>
 </html>
